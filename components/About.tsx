@@ -1,7 +1,20 @@
+"use client";
+import SectionHeader from "./Section-header";
+import { motion } from "framer-motion";
+import { useSectionInView } from "@/lib/hooks";
+
 export default function About() {
+  const { ref } = useSectionInView("About");
   return (
-    <section>
-      <h2>About me</h2>
+    <motion.section
+      ref={ref}
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-0 scroll-mt-28"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.25 }}
+      id="about"
+    >
+      <SectionHeader>About Me</SectionHeader>
       <p className="mb-3">
         After graduating with a degree in{" "}
         <span className="font-medium">Accounting</span>, I decided to pursue my
@@ -28,6 +41,6 @@ export default function About() {
         <span className="font-medium">history and philosophy</span>. I&apos;m
         also learning how to play the guitar.
       </p>
-    </section>
+    </motion.section>
   );
 }
