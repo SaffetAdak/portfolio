@@ -7,9 +7,11 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { activeSectionStore } from "@/store/activeSectionStore";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection } = activeSectionStore();
   return (
     <section
       ref={ref}
@@ -54,7 +56,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Saffet.</span> I&apos;m a{" "}
+        <span className="font-bold">Hello, I';m Saffet.</span> I';m a{" "}
         <span className="font-bold"> junior full-stack developer. </span>I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
@@ -69,6 +71,10 @@ export default function Intro() {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition shadow-md"
+          onClick={() => {
+            setActiveSection("Contact");
+            activeSectionStore.getState().setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me!{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
@@ -77,7 +83,7 @@ export default function Intro() {
         <a
           href="/CV.pdf"
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer shadow-md"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer shadow-md borderBlack"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-[0.15rem] transition" />
