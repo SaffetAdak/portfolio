@@ -8,3 +8,8 @@ export type Store = {
   timeOfLastClick: number;
   setTimeOfLastClick: (timeOfLastClick: number) => void;
 };
+
+export type ContactFormEmailProps = {
+  message: string;
+  email: string;
+};
