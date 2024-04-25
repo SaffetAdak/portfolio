@@ -1,7 +1,7 @@
-import type { Store } from "@/lib/types";
+import type { SectionStore } from "@/lib/types";
 import { create } from "zustand";
 
-export const activeSectionStore = create<Store>()((set) => ({
+export const activeSectionStore = create<SectionStore>()((set) => ({
   activeSection: "Home",
   setActiveSection: (activeSection) => set(() => ({ activeSection })),
   timeOfLastClick: 0,
