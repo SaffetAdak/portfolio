@@ -56,16 +56,16 @@ export default function Project({
           src={imageUrl}
           alt="Projects of me"
           quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-odd:right-[initial] group-odd:-left-40 transition
-        group-hover:scale-110
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
+          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] h-full object-cover rounded-t-lg shadow-2xl group-odd:right-[initial] group-odd:-left-40 transition
+    group-hover:scale-110
+    group-hover:-translate-x-3
+    group-hover:translate-y-3
+    group-hover:-rotate-2
 
-        group-odd:group-hover:translate-x-3
-        group-odd:group-hover:translate-y-3
-        group-odd:group-hover:rotate-2
-        "
+    group-odd:group-hover:translate-x-3
+    group-odd:group-hover:translate-y-3
+    group-odd:group-hover:rotate-2
+  "
         />
       </section>
     </motion.div>
