@@ -99,7 +99,7 @@ export const projectsData = [
   {
     title: "Currency Converter",
     description:
-      "This project is going to look like this concept design and I am still working on it. It's a currency converter app where you can convert currencies. It uses ExchangeRate-API.",
+      "This is a currency converter web app. It uses Frankfurter API to get the latest exchange rates.",
     tags: [
       "JavaScript",
       "TypeScript",
@@ -107,6 +107,7 @@ export const projectsData = [
       "Tailwind",
       "React",
       "NextUI",
+      "Three.js",
       "Framer Motion",
     ],
     imageUrl: converter,

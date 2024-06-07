@@ -16,6 +16,7 @@ const config: Config = {
       boxShadow: {
         darkModeShadow: "rgba(149, 157, 165, 0.1) 0px 8px 24px",
       },
+      objectFit: ["cover", "contain"],
     },
   },
   plugins: [],
