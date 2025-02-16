@@ -2,13 +2,17 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import dailyJournal from "@/public/dailyJournal.png";
-import tinDog from "@/public/tinDog.png";
 import toDoList from "@/public/toDoList.png";
 import emlakgpt from "@/public/emlakgpt.png";
 import shoppie from "@/public/shoppie.png";
 import evently from "@/public/evently.png";
 import converter from "@/public/converter.png";
+import fastFooood from "@/public/fastFooood.png";
+import iphone from "@/public/iphone.png";
+import brainwave from "@/public/brainwave.png";
+import imaginarium from "@/public/imaginarium.png";
+import shoeStop from "@/public/shoeStop.png";
+import heatmap from "@/public/heatmap.png";
 import github from "@/public/github.png";
 
 export const links = [
@@ -39,6 +43,14 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+  {
+    title: "Engineering Intern",
+    location: "Wiser RFID Software",
+    description:
+      "Worked on a Python Emotion/Face Recognition project with the team.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024",
+  },
   {
     title: "Volunteer Work",
     location: "Sosyal Inovasyon Ajansı",
@@ -83,23 +95,80 @@ export const projectsData = [
     imageUrl: emlakgpt,
   },
   {
-    title: "Shoppie",
+    title: "Shoe Stop",
     description:
-      "I made this project when I was learning React. It's a simple e-commerce website where you can add and remove items from the cart. It uses json server REST API.",
+      "Fully functional e-commerce website. It has authentication, filtering, database management, payment and more features. I made this project to test my knowledge on Full-Stack Web Development.",
     tags: [
       "JavaScript",
+      "TypeScript",
+      "Tailwind",
       "React",
-      "Redux",
-      "Reactstrap",
-      "json server",
-      "REST API",
+      "Next.js",
+      "MongoDB",
+      "Prisma",
+      "Stripe",
+      "NextAuth",
+      "GSAP",
+      "Lottie",
+      "Toast",
+      "Swiper",
+      "qs",
+      "swr",
     ],
-    imageUrl: shoppie,
+    imageUrl: shoeStop,
+  },
+  {
+    title: "Heatmap",
+    description:
+      "Implementation of a GitHub heatmap using React. It has different color schemes, database management, and more features. I made this project to improve my knowledge of Back-End Development and Database Management.",
+    tags: [
+      "JavaScript",
+      "TypeScript",
+      "Next.js",
+      "Tailwind",
+      "React",
+      "MongoDB",
+      "Prisma",
+      "Swr",
+      "Qs",
+      "Zustand",
+    ],
+    imageUrl: heatmap,
+  },
+  {
+    title: "İphone 15 Pro Website Clone",
+    description:
+      "I made this project along with a video. It's a clone of Apple's iPhone 15 Pro website. The aim of this project is to learn GSAP animations, Three.js and Vite",
+    tags: ["JavaScript", "Tailwind", "React", "Vite", "GSAP", "Three.js"],
+    imageUrl: iphone,
+  },
+  {
+    title: "Brainwave",
+    description:
+      "I made this project along with a video to learn creating modern websites with parallax effects, bento box layout and stylish UI design. It's a landing page for a fictional company.",
+    tags: ["JavaScript", "Tailwind", "React", "Vite", "ParaLLax Effect", "UI"],
+    imageUrl: brainwave,
+  },
+
+  {
+    title: "Imaginarium",
+    description:
+      "This is a project to test my knowledge of using GSAP animations, parallax effects, bentobox layout and stylish UI design. It's a landing page for a fictional company.",
+    tags: [
+      "JavaScript",
+      "Tailwind",
+      "Next.js",
+      "React",
+      "UI",
+      "GSAP",
+      "Parallax Effect",
+    ],
+    imageUrl: imaginarium,
   },
   {
     title: "Currency Converter",
     description:
-      "This is a currency converter web app. It uses Frankfurter API to get the latest exchange rates.",
+      "This is a currency converter web app. It uses Frankfurter API to get the latest exchange rates. I made this project to test my knowledge of using Public APIs.",
     tags: [
       "JavaScript",
       "TypeScript",
@@ -111,6 +180,21 @@ export const projectsData = [
       "Framer Motion",
     ],
     imageUrl: converter,
+  },
+  {
+    title: "Fast Fooood",
+    description:
+      "I made this project for my internship application. It's a clone of a company's custom packet page creator page. This project is the different version of the original project but it has the same features.",
+    tags: [
+      "JavaScript",
+      "TypeScript",
+      "Next.js",
+      "Tailwind",
+      "React",
+      "Zustand",
+      "Mui",
+    ],
+    imageUrl: fastFooood,
   },
   {
     title: "Evently",
@@ -129,18 +213,18 @@ export const projectsData = [
     imageUrl: evently,
   },
   {
-    title: "Daily Journal",
+    title: "Shoppie",
     description:
-      "I made this project when I was learning Express and Ejs. It's a simple journal app where you can write your thoughts and save them.",
-    tags: ["JavaScript", "HTML", "CSS", "Express", "Ejs"],
-    imageUrl: dailyJournal,
-  },
-  {
-    title: "TinDog",
-    description:
-      "A mockup of Tinder but for dogs. I made this project when I was learning Bootstrap.",
-    tags: ["JavaScript", "HTML", "CSS", "Bootstrap"],
-    imageUrl: tinDog,
+      "I made this project when I was learning React. It's a simple e-commerce website where you can add and remove items from the cart. It uses json server REST API.",
+    tags: [
+      "JavaScript",
+      "React",
+      "Redux",
+      "Reactstrap",
+      "json server",
+      "REST API",
+    ],
+    imageUrl: shoppie,
   },
   {
     title: "To Do List",
@@ -152,33 +236,49 @@ export const projectsData = [
   {
     title: "More Projects on my Github",
     description: " I have more projects on my Github link. ",
-    tags: ["JavaScript"],
+    tags: ["JavaScript", "TypeScript", "React", "Next.js", "MongoDB", "Prisma"],
     imageUrl: github,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
   "JavaScript",
   "TypeScript",
+  "HTML",
+  "CSS",
   "React",
   "Next.js",
   "Node.js",
-  "Git",
-  "Tailwind",
-  "Framer Motion",
-  "Prisma",
+  "Express",
+  "SQL",
   "MongoDB",
-  "Redux",
   "MySQL",
+  "Prisma",
+  "REST API",
+  "OpenAI API",
+  "Tailwind",
+  "Bootstrap",
   "NextUI",
   "Shadcn",
-  "SQL",
-  "Express",
-  "Bootstrap",
-  "OpenAI API",
-  "REST API",
+  "Framer Motion",
+  "GSAP",
+  "Lottie",
+  "Toast",
+  "Swiper",
+  "Zustand",
+  "Parallax Effect",
+  "Redux",
+  "Clerk",
+  "Stripe",
+  "NextAuth",
+  "json server",
+  "Mui",
+  "Git",
   "Python",
-  ,
+  "Vite",
+  "Three.js",
+  "qs",
+  "swr",
+  "Reactstrap",
+  "Ejs",
 ] as const;

@@ -15,29 +15,39 @@ export default function About() {
       id="about"
     >
       <SectionHeader>About Me</SectionHeader>
-      <p className="mb-3">
-        I'm a highly motivated and passionate{" "}
-        <span className="font-medium">Computer Engineering</span>, student with
-        a deep interest in{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">React, Next.js, Node.js, and Prisma</span>
-        . I am also familiar with TypeScript and MongoDB, Framer Motion. I am
-        always looking to learn new technologies. I am currently looking for an{" "}
-        <span className="font-medium">internship, full-time position</span> as a
-        software developer.
+      <p className="mb-4 text-lg text-gray-800 dark:text-gray-100 tracking-wide">
+        I'm a{" "}
+        <span className="font-semibold">Computer Engineering graduate</span>{" "}
+        with a deep passion for{" "}
+        <span className="font-semibold">full-stack web development</span>.
+        <span className="italic text-gray-600 dark:text-gray-400">
+          My favorite part of programming
+        </span>{" "}
+        is the problem-solving aspect. I <span className="underline">love</span>{" "}
+        the thrill of cracking a tough challenge. My core stack includes{" "}
+        <span className="font-semibold">React, Next.js, and Prisma</span>, and
+        I'm also experienced with{" "}
+        <span className="font-semibold">
+          TypeScript, MongoDB, and Framer Motion
+        </span>
+        . I enjoy working with modern tools and frameworks like{" "}
+        <span className="font-semibold">Tailwind, GSAP, and Three.js </span>
+        to build dynamic and visually appealing applications. I'm always looking
+        to learn new technologies, and I'm currently seeking a{" "}
+        <span className="font-semibold">
+          full-time software developer position
+        </span>
+        .
       </p>
 
-      <p>
+      <p className="text-lg text-gray-800 dark:text-gray-100">
         <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, going to gym, watching cat videos. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning{" "}
-        <span className="font-medium">video editing and photoshop</span>. I'm
-        also learning how to play the chess.
+        video games, going to the gym, and watching cat videos. I also enjoy{" "}
+        <span className="font-semibold">learning new things</span>. I'm
+        currently focused on my YouTube channel, where I{" "}
+        <span className="font-semibold">edit my own videos</span>. I think I'm a
+        good editor and love the creative process behind it. I'm also learning
+        how to play chess.
       </p>
     </motion.section>
   );
