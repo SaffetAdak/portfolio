@@ -176,6 +176,7 @@ export const projectsData = [
       "Tailwind",
       "React",
       "NextUI",
+      "Three.js",
       "Framer Motion",
     ],
     imageUrl: converter,
