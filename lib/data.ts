@@ -93,6 +93,7 @@ export const projectsData = [
       "Clerk",
     ],
     imageUrl: emlakgpt,
+    link: "https://github.com/osmanyusufakkus/emlakgptnextjs",
   },
   {
     title: "Shoe Stop",
@@ -116,6 +117,7 @@ export const projectsData = [
       "swr",
     ],
     imageUrl: shoeStop,
+    link: "https://github.com/SaffetAdak/shoe-shop",
   },
   {
     title: "Heatmap",
@@ -134,6 +136,7 @@ export const projectsData = [
       "Zustand",
     ],
     imageUrl: heatmap,
+    link: "https://github.com/SaffetAdak/heatmap",
   },
   {
     title: "İphone 15 Pro Website Clone",
@@ -141,6 +144,7 @@ export const projectsData = [
       "I made this project along with a video. It's a clone of Apple's iPhone 15 Pro website. The aim of this project is to learn GSAP animations, Three.js and Vite",
     tags: ["JavaScript", "Tailwind", "React", "Vite", "GSAP", "Three.js"],
     imageUrl: iphone,
+    link: "https://github.com/SaffetAdak/apple-website-clone",
   },
   {
     title: "Brainwave",
@@ -148,6 +152,7 @@ export const projectsData = [
       "I made this project along with a video to learn creating modern websites with parallax effects, bento box layout and stylish UI design. It's a landing page for a fictional company.",
     tags: ["JavaScript", "Tailwind", "React", "Vite", "ParaLLax Effect", "UI"],
     imageUrl: brainwave,
+    link: "https://github.com/SaffetAdak/brainwave-website",
   },
 
   {
@@ -164,6 +169,7 @@ export const projectsData = [
       "Parallax Effect",
     ],
     imageUrl: imaginarium,
+    link: "https://github.com/SaffetAdak/imaginarium",
   },
   {
     title: "Currency Converter",
@@ -180,6 +186,7 @@ export const projectsData = [
       "Framer Motion",
     ],
     imageUrl: converter,
+    link: "https://github.com/SaffetAdak/currency-converter",
   },
   {
     title: "Fast Fooood",
@@ -195,6 +202,7 @@ export const projectsData = [
       "Mui",
     ],
     imageUrl: fastFooood,
+    link: "https://github.com/SaffetAdak/fast-fooood-custom-packet",
   },
   {
     title: "Evently",
@@ -211,6 +219,7 @@ export const projectsData = [
       "Clerk",
     ],
     imageUrl: evently,
+    link: "https://github.com/SaffetAdak/Next.Js-Course-event_platform",
   },
   {
     title: "Shoppie",
@@ -225,6 +234,7 @@ export const projectsData = [
       "REST API",
     ],
     imageUrl: shoppie,
+    link: "",
   },
   {
     title: "To Do List",
@@ -232,12 +242,14 @@ export const projectsData = [
       "A simple to-do list app. I made this project when I was learning Express and Ejs",
     tags: ["JavaScript", "HTML", "CSS", "Express", "Ejs"],
     imageUrl: toDoList,
+    link: "https://github.com/SaffetAdak/todolist-v1",
   },
   {
     title: "More Projects on my Github",
     description: " I have more projects on my Github link. ",
     tags: ["JavaScript", "TypeScript", "React", "Next.js", "MongoDB", "Prisma"],
     imageUrl: github,
+    link: "https://github.com/SaffetAdak?tab=repositories",
   },
 ] as const;
 
