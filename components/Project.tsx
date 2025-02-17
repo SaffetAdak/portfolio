@@ -1,6 +1,6 @@
 "use client";
 import { projectsData } from "@/lib/data";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { useScroll, motion, useTransform } from "framer-motion";
 import Link from "next/link";
@@ -17,7 +17,7 @@ export default function Project({
   const displayDescription = `${description.substring(0, 40)}...`;
 
   const ref = useRef<HTMLDivElement>(null);
-  const isMobile = window.innerWidth < 640;
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0 1", "1.33 1"],
